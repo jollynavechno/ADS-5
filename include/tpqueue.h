@@ -9,7 +9,8 @@ struct ITEM {
 T data;
 ITEM *next;
 };
-private:
+
+ private:
 ITEM *create(T data) {
 ITEM *i = new ITEM;
 i->data = data;
@@ -18,7 +19,8 @@ return i;
 }
 ITEM *head;
 ITEM *tail;
-public:
+
+ public:
 TPQueue() : head(nullptr), tail(nullptr) {}
 ~TPQueue() {
 while (head)
