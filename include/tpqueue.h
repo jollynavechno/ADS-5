@@ -9,12 +9,6 @@ struct ITEM {
 T data;
 ITEM *next;
 };
-public:
-TPQueue() : head(nullptr), tail(nullptr) {}
-~TPQueue() {
-while (head)
-pop();
-}
 private:
 ITEM *create(T data) {
 ITEM *i = new ITEM;
@@ -25,6 +19,12 @@ return i;
 ITEM *head;
 ITEM *tail;
 };
+public:
+TPQueue() : head(nullptr), tail(nullptr) {}
+~TPQueue() {
+while (head)
+pop();
+}
 
 void push(const T &data) {
 if (tail && head) {
