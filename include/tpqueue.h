@@ -18,7 +18,6 @@ return i;
 }
 ITEM *head;
 ITEM *tail;
-};
 public:
 TPQueue() : head(nullptr), tail(nullptr) {}
 ~TPQueue() {
